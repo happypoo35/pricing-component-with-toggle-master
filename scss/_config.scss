@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+$Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+$Light-Grayish-Blue: hsl(234, 14%, 74%);
+$Grayish-Blue: hsl(233, 13%, 49%);
+$Dark-Grayish-Blue: hsl(232, 13%, 33%);
+$Blue: hsl(237, 63%, 64%);
+$Gradient: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+$Card-Gradient: linear-gradient(
+  to bottom,
+  hsl(236, 72%, 79%),
+  hsl(237, 63%, 64%)
+);
+
+$tablet: 860px;
+
+@mixin tablet {
+  @media screen and(max-width: $tablet) {
+    @content;
+  }
+}
+
+%transition {
+  transition: 0.3s ease;
+}
+
+%wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.monthly,
+.annually {
+  animation: 0.4s scale ease;
+}
+
+.annually {
+  display: none;
+}
+
+@keyframes scale {
+  from {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: $Dark-Grayish-Blue;
+  background: $Very-Light-Grayish-Blue;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1;
+  color: $Grayish-Blue;
+}
+
+h2 {
+  font-size: 1.1rem;
+  color: $Grayish-Blue;
+}
+
+h3 {
+  font-size: 4.4rem;
+  letter-spacing: -0.2rem;
+  display: flex;
+  align-items: center;
+}
+
+small {
+  font-size: 2.5rem;
+  margin-right: 0.5rem;
+}
+
+span {
+  color: $Light-Grayish-Blue;
+}
+
+table,
+td {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: rgba($Dark-Grayish-Blue, 0.2);
+  border-collapse: collapse;
+}
+
+td {
+  text-align: center;
+  color: $Grayish-Blue;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-image: $Gradient;
+  font-family: inherit;
+  font-weight: inherit;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  color: $Very-Light-Grayish-Blue;
+  border-radius: 0.5rem;
+  width: 100%;
+  padding: 1rem;
+
+  &:hover {
+    background: transparent;
+    box-shadow: 0 0 0 1px $Blue;
+    color: $Blue;
+  }
+}
+
+
