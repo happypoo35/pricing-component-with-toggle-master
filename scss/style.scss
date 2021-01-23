@@ -25,11 +25,15 @@ h1 {
 
 .checkbox-container {
   display: flex;
-  gap: 1.5rem;
   align-items: center;
   cursor: pointer;
   user-select: none;
   margin-bottom: 4rem;
+  // gap: 1.5rem;
+
+  & > * + * {
+    margin-left: 1.5rem;
+  }
 
   input {
     display: none;
@@ -78,7 +82,11 @@ h1 {
 
   @include tablet {
     flex-direction: column;
-    gap: 2rem;
+    // gap: 2rem;
+
+    & > * + * {
+      margin-top: 2rem;
+    }
   }
 }
 
